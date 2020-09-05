@@ -22,9 +22,13 @@
 
     </div>
     <script>
-        jQuery.get('http://localhost/index.md', function(data) {
-            alert(data);
-        });
+        $.ajax({
+        url: "./index.md",
+        dataType: "jsonp",
+        success: function( response ) {
+            console.log( response ); // server response
+        }
+    });
     </script>
 </body>
 </html>
