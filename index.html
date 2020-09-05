@@ -23,15 +23,13 @@
 </head>
 
 <body>
-    <div id="blog">
-
-    </div>
+    <div id="blog" mardown="1"/>
     <script>
         $.ajax(
             {
                 url: "./index.md",
                 success: function (response) {
-                    console.log(response); // server response
+                    document.getElementById("blog").innerHTML = response;
                 }
             }
         );
