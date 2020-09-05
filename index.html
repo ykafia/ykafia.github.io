@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.1/dist/terminal.min.css" />
     <title>Rambling about things</title>
 </head>
+
 <body></body>
+
 </html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/papercss/dist/paper.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/papercss/dist/paper.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Rambling about things</title>
 </head>
+
 <body>
     <div id="blog">
 
     </div>
     <script>
-        $.ajax({
-        url: "./index.md",
-        dataType: "jsonp",
-        success: function( response ) {
-            console.log( response ); // server response
-        }
-    });
+        $.ajax(
+            {
+                url: "./index.md",
+                success: function (response) {
+                    console.log(response); // server response
+                }
+            }
+        );
     </script>
 </body>
+
 </html>
