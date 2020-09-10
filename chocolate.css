@@ -1,0 +1,32 @@
+.chocolate-bg-primary{
+    background-color: #cbffd0;
+}
+.chocolate-bg-secondary{
+    background-color: #8febbc;
+}
+.chocolate-bg-sucess{
+    background-color: #9ad493;
+}
+.chocolate-bg-warning{
+    background-color: #ffad42;
+}
+.chocolate-bg-danger{
+    background-color: #f33535;
+}
+
+body {
+    background-color : #F5f5f5
+}
+
+.sticky-note {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+}
+.views {
+    margin-top : 0;
+}
+.chocolate-card {
+    margin-top:0.7rem;
+    display:inline-block
+}
