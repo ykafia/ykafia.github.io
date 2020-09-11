@@ -11,10 +11,14 @@
 </head>
 <body>
     <section id="app"></section>
-    <script type="module">
+    <script src="./pkg/package.js"></script>
+    <script>
+        init("./package_bg.wasm");
+    </script>
+    <!-- <script type="module">
         import init from '/pkg/package.js';
         init('/pkg/package_bg.wasm');
-    </script>
+    </script> -->
 </body>
 
 </html>
