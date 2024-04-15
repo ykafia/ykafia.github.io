@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bolero Application</title>
-  <base href="/">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="YounessBlogPost.Client.styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YounessBlogPost.Blazor</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="YounessBlogPost.Blazor.styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js" integrity="sha512-2Mz4HPfbnPT0gLJwtbyMgAXzvsHt73xiIIkyFsrC0pc4XEf/UMQon8eXhdPQIideGBUla7eE1inLnzm9L/ZTFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/css.min.js" integrity="sha512-GviyEru8zf6uSab40SEWf+BGBpa6K9ezNf0WQQ0QfHr2+qQ3zTRgOfurloGH3xiKa4vt6HNCOv9NdEPLbQw1XQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item has-text-weight-bold is-size-5" href="https://fsbolero.io">
-        <img style="height:40px" src="https://github.com/fsbolero/website/raw/master/src/Website/img/wasm-fsharp.png" />
-        &nbsp;
-        Bolero
-      </a>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
     </div>
-  </nav>
-  <div id="main">Loading...</div>
-  <script src="_framework/blazor.webassembly.js"></script>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script>
+        window.highlightSnippet = function () {
+            
+            document.querySelectorAll('pre code').forEach((el) => {
+                console.log(el.textContent);
+                hljs.highlightBlock(el);
+            });
+        }
+    </script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    
 </body>
 
 </html>
